@@ -1,0 +1,5 @@
+.description {
+    height: 100px;
+    overflow: auto;
+    text-overflow: ellipsis;
+}
