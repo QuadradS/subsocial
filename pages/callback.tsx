@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react';
 import {useRouter} from 'next/router'
 import {authUser} from "../store/auth";
 import {useDispatch, useStore} from "react-redux";
+import Link from "next/link";
 
 enum EState {
   INIT = "INITIAL_STATE",
@@ -41,7 +42,7 @@ const Callback = () => {
     <div>
       {state === EState.LOADING || state === EState.INIT && ('WAIT')}
       {state === EState.SUCCESS && (<div>
-        <a href="/">SUCCESS LOGIN! Back to main page</a>
+        <Link href="/">SUCCESS LOGIN! Back to main page</Link>
       </div>)}
       {state === EState.FAIL && (<div>
         ERROR :(
