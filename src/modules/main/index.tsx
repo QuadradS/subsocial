@@ -26,7 +26,7 @@ const MainModule = () => {
   const handleLoadMorePosts = () => dispatch(fetchPosts({search, limit: posts.length + 10}))
 
   useEffect(() => {
-    axios.get('/api/redditAuthLink')
+    axios.get('/api/reddit/authLink')
       .then((r) => setLink(r.data.payload))
   }, []);
 

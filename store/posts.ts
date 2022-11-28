@@ -10,7 +10,7 @@ export const fetchPosts = createAsyncThunk('FETCH_POSTS', async ({
                                                                    search,
                                                                    limit = 20
                                                                  }: IFetchPostsParams): Promise<IPost[]> => {
-  const result = await axios.get(`/api/redditPosts`, {
+  const result = await axios.get(`/api/reddit/posts`, {
     params: {
       search,
       limit

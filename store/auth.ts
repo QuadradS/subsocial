@@ -2,7 +2,7 @@ import {createAsyncThunk, createSlice} from '@reduxjs/toolkit'
 import axios from "axios";
 
 export const authUser = createAsyncThunk('AUTH', async (code: string) => {
-  const res = await axios.get(`http://localhost:3000/api/redditAuth?code=${code}`);
+  const res = await axios.get(`/api/reddit/auth?code=${code}`);
   return res.data;
 })
 
