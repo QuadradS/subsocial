@@ -1,5 +1,6 @@
 IPFS_NODE_URL=https://crustwebsites.net
 SUBSTRADE_NODE_URL=wss://rco-para.subsocial.network
 MNEMONIC=bottom drive obey lake curtain smoke basket hold race lonely fit walk//Alice
-CLIENT_ID=IG3a1OQE8sLs9-jntW9cIA
-CLIENT_SECRET=GHnMjqaOPFthLm3_qztuyKY1DgY0xQ
+CLIENT_ID=-7fTLdO5i_aV5v3Gpnyj8A
+CLIENT_SECRET=i9pm78rev-XrvVkk20rEMe0_EoKrJw
+HOST_DOMAIN=http://localhost:3000
