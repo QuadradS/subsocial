@@ -11,7 +11,8 @@ export default async function handler(
   const clientID = process.env.CLIENT_ID;
   const resType = 'code';
   const state = 'SOME_STATE';
-  const redirectUrl = '/callback';
+  const host = req.headers.host;
+  const redirectUrl = `${host}/callback`;
   const scope = 'identity, edit, flair, history, modconfig, modflair, modlog, modposts, modwiki, mysubreddits, privatemessages, read, report, save, submit, subscribe, vote, wikiedit, wikiread'
 
   const linkToAuth = `https://www.reddit.com/api/v1/authorize?api_key&client_id=${clientID}&redirect_uri=${redirectUrl}&response_type=${resType}&scope=${scope}&state=${state}
